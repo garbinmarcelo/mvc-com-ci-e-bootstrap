@@ -1,5 +1,4 @@
 # PHP e MVC com CodeIgniter: Desenvolvimento Web com Framework
----
 ![CodeIgniter 3](https://github.com/marcelogarbin/mvc-com-ci-e-bootstrap/raw/master/assets/img/codeigniter-logo.png "CodeIgniter 3") ![Bootstrap 3](https://github.com/marcelogarbin/mvc-com-ci-e-bootstrap/raw/master/assets/img/bootstrap-logo.png "Bootstrap 3")
 
 Neste minicurso veremos uma introdução ao framework CodeIgniter utilizando o padrão MVC (Model, View,
@@ -36,6 +35,7 @@ Bootstrap. __Bootstrap 3 Examples__. Disponível em: <[http://getbootstrap.com/g
 ---
 ### Parte Teórica
 
+
 ### Parte Prática
 Primeiramente vamos acessar a pasta __application__, nela se encontra a estrutura necessária para criarmos nosso CRUD.
 Algumas pastas que vamos utilizar são: 
@@ -63,8 +63,8 @@ $db['default'] = array(
 
 3. Acessar o arquivo __application/config/autoload.php__ e definir as bibliotecas e helpers que iremos carregar em nossa aplicação:
 ```php
-$autoload['libraries'] = array('database', 'form_validation');
-$autoload['helper'] = array('form');
+$autoload['libraries'] = array('database', 'form_validation', 'session');
+$autoload['helper'] = array('url', 'form');
 ```
 
 
@@ -85,3 +85,4 @@ class Pessoa extends CI_Controller {
 	}
 }
 ```
+
