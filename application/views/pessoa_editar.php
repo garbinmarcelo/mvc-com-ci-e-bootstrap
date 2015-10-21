@@ -4,7 +4,7 @@
       $atributos = array('class' => 'form-cadastro', 'id' => 'form-cadastro');
       $hidden    = array('id_pessoa' => $registro->id_pessoa);
       echo form_open('pessoa/gravar_edicao', $atributos, $hidden);
-        echo form_fieldset('<span class="glyphicon glyphicon-user"></span> Cadastro de Pessoas');
+        echo form_fieldset('<span class="glyphicon glyphicon-user"></span> Editar Cadastro: #'.$registro->id_pessoa);
         if(validation_errors()){
           echo '<div role="alert" class="alert alert-danger alert-dismissible fade in">';
           echo '<button aria-label="Close" data-dismiss="alert" class="close" type="button"><span aria-hidden="true">×</span></button>';
